@@ -69,10 +69,11 @@
         input,
         textarea {
             width: 100%;
-            padding: 8px;
+            padding: 10px 15px;
             box-sizing: border-box;
             border: 1px solid var(--main-color);
-            border-radius: 4px;
+            border-radius: 5px;
+            margin-bottom: 8px;
             outline: none;
         }
 
@@ -105,12 +106,18 @@
 
         button {
             width: 100%;
-            padding: 8px;
+            padding: 15px;
             margin-bottom: 10px;
             background-color: var(--main-color);
             color: var(--text-light-color);
+            font-size: 1em;
+            letter-spacing: .01em;
+            font-weight: 600;
+            transition: all .3s;
+            overflow: hidden;
+            line-height: 1.5;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
         }
 
@@ -157,8 +164,8 @@
                     <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance">
                     <div class="error-message" id="apiTokenInstance-error">Поле не должно быть пустым</div>
                 </div>
-                <button id="getSettings">getSettings</button>
-                <button id="getStateInstance">getStateInstance</button>
+                <button id="getSettings">Получить настройки</button>
+                <button id="getStateInstance">Получить статус</button>
             </div>
 
             <div class="section">
@@ -171,7 +178,7 @@
                     <textarea id="message" rows="5" placeholder="Текст сообщения"></textarea>
                     <div class="error-message" id="message-error">Поле не должно быть пустым</div>
                 </div>
-                <button id="sendMessage">sendMessage</button>
+                <button id="sendMessage">Отправить сообщение</button>
             </div>
 
             <div class="section">
@@ -184,7 +191,7 @@
                     <input type="text" id="fileUrl" placeholder="URL файла">
                     <div class="error-message" id="fileUrl-error">Поле не должно быть пустым</div>
                 </div>
-                <button id="sendFileByUrl">sendFileByUrl</button>
+                <button id="sendFileByUrl">Отправить файл по URL</button>
             </div>
         </div>
 

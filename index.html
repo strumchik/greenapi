@@ -73,10 +73,22 @@
             box-sizing: border-box;
             border: 1px solid var(--main-color);
             border-radius: 4px;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 1px solid var(--main-color);
+            outline: none;
         }
 
         input.error,
         textarea.error {
+            border-color: var(--error-color);
+        }
+
+        input.error:focus,
+        textarea.error:focus {
             border-color: var(--error-color);
         }
 
